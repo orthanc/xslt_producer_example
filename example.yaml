@@ -1,0 +1,17 @@
+template: html_summary.xslt
+sections:
+  - name: Section One
+    summary_fields:
+      - name: Stuff
+        path: /content/bob/stuff
+        format: date
+      - name: More Stuff
+        path: /content/bob/more_stuff
+        format: string
+  - name: Another Section
+    summary_fields:
+      - name: yet more stuff
+        path: /content/other_stuff
+      - name: yet more stuff but this time with a bad format
+        path: /content/other_stuff
+        format: bad_format
